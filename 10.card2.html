@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card {
+            width: 400px;
+            height: 550px;
+            background-color: hsl(0, 0%, 77%);
+            /* background: url(./images/mosaic-3394375_640.jpg) no-repeat; */
+            border-radius: 40px;
+            /* padding-top: 30px; */
+            text-align: center;
+        }
+
+        .figure {
+            width: 200px;
+            height: 200px;
+            border-radius: 100%;
+            overflow: hidden;
+            /* margin: -100px auto 0; */
+            position: absolute;
+            top: 80px;
+            left: calc(50% - 100px);
+            /* calculation:50%表起始點在中間，用計算工具calc檢調圖片一半大小，讓圖片致中 */
+        }
+
+        .figure img {
+            width: 200px;
+            /* padding: 30px; */
+
+        }
+
+        h2,
+        p {
+            /* text-align: center; */
+            margin: 10px 0 30px;
+        }
+
+        h2 {
+            width: 80%;
+            margin: 15px auto 0;
+            border-bottom: 1px solid indigo;
+            padding-bottom: 10px;
+        }
+
+        .wrap {
+            width: 300px;
+            height: 160px;
+            margin: 130px auto 0;
+            border: 20px solid transparent;
+            border-image: url("./images/frame_border.png") 80 stretch;
+        }
+
+        .picture {
+            width: 400px;
+            height: 170px;
+            border-radius: 40px 40px 0 0;
+            background: url(./images/mosaic-3394375_640.jpg) no-repeat;
+            background-size: cover;
+
+        }
+
+        a {
+            color: rgb(102, 50, 102);
+            background: linear-gradient(rgb(123, 243, 203), rgb(2, 143, 96));
+            padding: 10px 30px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            border-radius: 15px;
+            /* margin-top: 300px; */
+            /* width: 300px; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="picture"></div>
+        <div class="figure">
+            <img src="./link/alien1_2.jpg" alt="">
+        </div>
+        <div class="wrap">
+            <h2>Marvin</h2>
+            <p>hey i was born on the moooon</p>
+            <a href="">follow</a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

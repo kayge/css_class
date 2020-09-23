@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .triangle {
+            width: 800px;
+            height: 500px;
+            background: url(./images/Musée\ du\ Louvre.jpg) no-repeat;
+            background-size: contain;
+            position: relative;
+        }
+
+        h1 {
+            color: rgb(255, 255, 255);
+            background-color: rgb(255, 255, 255, 0);
+            ;
+            width: 800px;
+            text-align: center;
+            opacity: 50%;
+            position: absolute;
+            top: 380px;
+            padding: 7px;
+            /* line-height: 850px; */
+        }
+
+        div:hover .triangle {
+            background: url(./images/Musée\ du\ Louvre.jpg) no-repeat;
+            opacity: 50%;
+            width: 800px;
+            height: 500px;
+            background-size: contain;
+        }
+
+        div:hover h1 {
+            opacity: 100%;
+            color: black;
+            background-color: rgb(255, 255, 255, 1);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="triangle"></div>
+        <h1>PARIS</h1>
+    </div>
+
+
+</body>
+
+</html>

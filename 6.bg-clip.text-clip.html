@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            background-color: rgb(202, 235, 164);
+            background: url(./images/back1.jpg) repeat;
+            border: 10px dashed rgba(230, 119, 187, 0.5);
+            margin: 10px;
+            padding: 20px;
+            float: left;
+        }
+
+        .border-box {
+            background-clip: border-box;
+        }
+
+        .padding-box {
+            background-clip: padding-box;
+        }
+
+        .content-box {
+            background-clip: content-box;
+        }
+
+        h1 {
+            background: url(./images/mosaic-3394375_640.jpg) no-repeat;
+            font-size: 100px;
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;
+            clear: left;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box border-box"></div>
+    <div class="box padding-box"></div>
+    <div class="box content-box"></div>
+    <h1>text-clip</h1>
+</body>
+
+</html>

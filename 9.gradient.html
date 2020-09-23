@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient</title>
+    <style>
+        .b {
+            margin: 10px;
+        }
+
+        .box1 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(red, orange, yellow, green, blue);
+        }
+
+        .box2 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(to right, red, orange, yellow, green, blue);
+        }
+
+        .box3 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(45deg, red 50%, orange, yellow, green, blue);
+        }
+
+        .box4 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(217deg, rgba(255, 45, 203, 0.8), rgba(195, 231, 37, 0.842) 70.20%), linear-gradient(127deg, rgba(66, 255, 239, 0.8), rgba(5, 93, 255, 0.712) 80%), linear-gradient(336deg, rgba(129, 236, 115, 0.8), rgba(129, 236, 115, 0.8));
+        }
+
+        .box5 {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(217deg, rgba(255, 45, 203, 0.8), rgba(195, 231, 37, 0.842) 70.20%), linear-gradient(33deg, rgba(66, 255, 239, 0.8), rgba(5, 93, 255, 0.712) 80%), linear-gradient(336deg, rgba(129, 236, 115, 0.8), rgba(129, 236, 115, 0.8), linear-gradient(5deg, rgba(123, 115, 236, 0.8), rgba(255, 0, 0, 0.8));
+            }
+
+            .box6 {}
+    </style>
+</head>
+
+<body>
+    <div class="b box1"></div>
+    <div class="b box2"></div>
+    <div class="b box3"></div>
+    <div class="b box4"></div>
+    <div class="b box5"></div>
+    <div class="b box6"></div>
+</body>
+
+</html>

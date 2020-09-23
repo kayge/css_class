@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 100%;
+            height: 100px;
+            background: repeating-linear-gradient(deeppink, hotpink 25%);
+
+        }
+
+        .box2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(rgb(255, 90, 255), rgb(128, 128, 35) 25%, rgb(88, 138, 134) 100%);
+        }
+
+        .box3 {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background: radial-gradient(at 80% 80px, rgba(255, 0, 0, 0.795), rgba(128, 0, 128, 0.753))50%, radial-gradient(circle at right bottom, rgba(187, 255, 0, 0.623), rgba(93, 120, 240, 0.801))50%;
+        }
+
+        .box4 {
+            width: 100%;
+            height: 100px;
+            background: repeating-radial-gradient(circle, rgb(20, 255, 157), orchid 8%, rgb(105, 165, 255) 16%, deeppink 25%);
+        }
+
+        .box5 {
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+        }
+
+        .box6 {
+            width: 100px;
+            height: 100px;
+            background: v(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+                linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+                linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+        }
+
+        h1 {
+            background: repeating-radial-gradient(circle, rgb(20, 255, 157), orchid 8%, rgb(105, 165, 255) 16%, deeppink 25%);
+            float: left;
+            font-size: 100PX;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <h1>text-clip</h1>
+</body>
+
+</html>

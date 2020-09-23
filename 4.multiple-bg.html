@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map {
+            background: url(./images/map1.jpg);
+            width: 800px;
+            height: 450px;
+            background-size: auto;
+            margin: 0 auto;
+        }
+
+        .map:hover {
+            background: url(./images/1.png) 30% 60% no-repeat, url(./images/2.png) 60% center no-repeat, url(./images/3.png) 80% 30% no-repeat, url(./images/map1.jpg);
+            background-size: 10%, 10%, 10%, auto;
+        }
+
+        .city {
+            width: 800px;
+            height: 250px;
+            background: url(./images/city.jpg) center 0%no-repeat;
+            background-size: 300px auto;
+            margin: 0 auto;
+            outline: 1px solid tomato;
+        }
+
+        .contain {
+            background-size: contain;
+            ;
+        }
+
+        .cover {
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="map"></div>
+    <div class="city"></div>
+    <div class="city contain"></div>
+    <div class="city cover"></div>
+</body>
+
+</html>
