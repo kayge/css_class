@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: deeppink;
+
+            /* transition-duration: 1s; */
+            /* transition-delay: 0.5s; */
+        }
+
+        .b1 {
+            transition: .5s;
+            transition-timing-function: cubic-bezier(.6, .05, .41, .98);
+        }
+
+        .b2 {
+            transition: background .5s, width .5s ease .5s translate .5s;
+            transition-duration: 2s;
+        }
+
+        .wrap {
+            width: 200px;
+            height: 200px;
+        }
+
+        .wrap:hover .b2 {
+            background-color: maroon;
+            width: 400px;
+            transform: translateX(300px);
+        }
+
+        .b1:hover {
+            background-color: lightskyblue;
+            transform: translateX(300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box b1"></div>
+    <div class="wrap">
+        <div class="box b2"></div>
+    </div>
+</body>
+
+</html>

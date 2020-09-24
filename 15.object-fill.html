@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>照片填滿設定</title>
+    <style>
+        .box {
+            height: 200px;
+            width: 40%;
+            float: left;
+            margin: 10px;
+            border: 1px solid black;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .fill {
+            object-fit: fill;
+        }
+
+        .contain {
+            object-fit: contain;
+            object-position: 60px;
+        }
+
+        .cover {
+            object-fit: cover;
+            object-position: 0 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img class="fill" src="./images/ex1_pic1.jpg" alt="">
+    </div>
+    <div class="box">
+        <img class="contain" src="./images/ex1_pic1.jpg" alt="">
+    </div>
+    <div class="box">
+        <img class="cover" src="./images/ex1_pic1.jpg" alt="">
+    </div>
+    <div class="box">
+        <img class="none" src="./images/ex1_pic1.jpg" alt="">
+    </div>
+    <!-- emmet for img -->
+    <!-- (.box>img[src=./images/little-girl-1894125_1920.jpg])*4 -->
+</body>
+
+</html>

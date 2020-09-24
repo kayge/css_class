@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字體大小表示</title>
+    <style>
+        html {
+            font-size: 40px;
+        }
+
+        div {
+            font-size: 1.5em;
+            /* em:層層倍數加成 從根目錄的字體大小40的倍數去設 */
+            font-size: 1.5rem;
+            /* rem:從根目錄的字體大小40的倍數去設 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="layer1">
+            layer1
+            <div class="layer2">
+                layer2
+                <div class="layer3">
+                    layer3
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
