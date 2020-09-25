@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-around; */
+            background-color: beige;
+            height: 500px;
+            width: 600px;
+            /* align-items: center; */
+            margin: 10px;
+        }
+
+        .boxa {
+            width: 300px;
+            height: 200px;
+            /* height: 100px; */
+
+        }
+
+        /* flex-shrink:設定在子層個別物件，把超出父層空間依照比例分配0.1.2...縮減，縮減方向為左右(與flex-direction: row垂直的方向)，縮到最小會保留content寬度*/
+        .b1 {
+            flex-shrink: 1;
+        }
+
+        .b2 {
+            flex-shrink: 100;
+        }
+
+        .b3 {
+            flex-shrink: 1;
+        }
+
+        .boxb {
+            height: 200px;
+            flex-basis: 0;
+            flex-grow: 1;
+        }
+
+        /* 長寬設定的權重:min/max-width>flex-basis(與flex-direction: row垂直的方向)>width */
+        .b4 {
+            /* min-width: 300px; */
+            /* flex-basis: 400px; */
+            width: 100px;
+        }
+
+
+
+        /* flex-wrap:設定子層物件如果一排超過父層寬度，會自動換行
+不設定的話會使用預設flex-shrink均縮所有子物件符合父層寬度 */
+        /* flex-wrap:wrap超出不縮小，往下排，flex-wrap:wrap-reverse超出往上排 */
+        /* align-content:設定整行在wrap中的上下位置。與align-items則是子元素整體在行內的上下位置 */
+        .container {
+            width: 800px;
+            height: 800px;
+            background-color: rgb(89, 108, 116);
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+        }
+
+        .wrap.flex-wrap {
+            background-color: darkgray;
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* align-content: space-between; */
+            /* align-content: center; */
+            /* align-content: flex-start; */
+            /* align-items: center; */
+        }
+
+        .boxc {
+            /* height: 100px; */
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="boxa autobg b1">box1</div>
+        <div class="boxa autobg b2">box2</div>
+        <div class="boxa autobg b3">box3</div>
+    </div>
+    <div class="wrap">
+        <div class="boxb autobg b4">box4</div>
+        <div class="boxb autobg b5">box5</div>
+        <div class="boxb autobg b6">box6</div>
+    </div>
+    <div class="container">
+        <div class="wrap flex-wrap">
+            <div class="boxc autobg 1">box1</div>
+            <div class="boxc autobg 2">box2</div>
+            <div class="boxc autobg 3">box3</div>
+            <div class="boxc autobg 4">box4</div>
+            <div class="boxc autobg 5">box5</div>
+            <div class="boxc autobg 6">box6</div>
+            <div class="boxc autobg 7">box7</div>
+            <div class="boxc autobg 8">box8</div>
+            <div class="boxc autobg 9">box9</div>
+            <div class="boxc autobg 10">box10</div>
+        </div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+    // $('.autobg').each(function (index, currentElement) {
+    //     currentElement.style.backgroundImage = getRBGA();
+    // });
+    </script>
+</body>
+
+</html>

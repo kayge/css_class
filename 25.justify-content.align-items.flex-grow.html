@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            background-color: beige;
+            height: 500px;
+            align-items: center;
+        }
+
+        .box {
+            width: 100px;
+            /* height: 100px; */
+        }
+
+        /* flex-grow:設定在子層個別物件，把剩餘空間依照比例分配0.1.2...增加，分配方向為左右(與flex-direction: row垂直的方向)*/
+        .b1 {
+            height: 200px;
+            flex-grow: 1;
+        }
+
+        .b2 {
+            height: 300px;
+            flex-grow: 2;
+        }
+
+        .b3 {
+            height: 400px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box autobg b1">box1</div>
+        <div class="box autobg b2">box2</div>
+        <div class="box autobg b3">box3</div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+    // $('.autobg').each(function (index, currentElement) {
+    //     currentElement.style.backgroundImage = getRBGA();
+    // });
+    </script>
+</body>
+
+</html>
