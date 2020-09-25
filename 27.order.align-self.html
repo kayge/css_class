@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap {
+            width: 800px;
+            height: 800px;
+            background-color: rgb(141, 139, 238);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin: 10px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+        }
+
+        /* order:修改flex子元素的順序，基準值為0，-1在0左邊，1在0右邊，數字大小無極限 */
+        .box7,
+        .box10 {
+            order: -1;
+        }
+
+        .box2 {
+            order: 1;
+        }
+
+        .wrap2 {
+            width: 800px;
+            height: 800px;
+            background-color: rgb(141, 139, 238);
+            display: flex;
+            flex-direction: row;
+            align-items: flex-end;
+            margin: 10px;
+        }
+
+        /* align-self:指定子層物件位置 */
+        .boxa {
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box autobg">box1</div>
+        <div class="box autobg box2">box2</div>
+        <div class="box autobg">box3</div>
+        <div class="box autobg">box4</div>
+        <div class="box autobg">box5</div>
+        <div class="box autobg">box6</div>
+        <div class="box autobg box7">box7</div>
+        <div class="box autobg">box8</div>
+        <div class="box autobg">box9</div>
+        <div class="box autobg box10">box10</div>
+        <div class="box autobg">box11</div>
+        <div class="box autobg">box12</div>
+        <div class="box autobg">box13</div>
+        <div class="box autobg">box14</div>
+        <div class="box autobg">box15</div>
+        <div class="box autobg">box16</div>
+        <div class="box autobg">box17</div>
+        <div class="box autobg">box18</div>
+        <div class="box autobg">box19</div>
+        <div class="box autobg">box20</div>
+
+    </div>
+    <div class="wrap2">
+        <div class="box autobg">box1</div>
+        <div class="box autobg">box2</div>
+        <div class="box autobg boxa">box3</div>
+    </div>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <script>
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * Math.floor(max - 50) + 100);
+        }
+
+        function getRBGA() {
+            return `linear-gradient(135deg, rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.5), rgba(${getRandomInt(256)},${getRandomInt(256)},${getRandomInt(256)},.8)`
+        }
+
+        const elements = document.querySelectorAll('.autobg');
+
+        Array.from(elements).forEach((element, index) => {
+            element.style.backgroundImage = getRBGA();
+        });
+
+    // $('.autobg').each(function (index, currentElement) {
+    //     currentElement.style.backgroundImage = getRBGA();
+    // });
+    </script>
+</body>
+
+</html>
