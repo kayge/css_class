@@ -3,20 +3,19 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>get hands dirty</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>alameda</title>
     <link rel="stylesheet" href="./fontawesome-free-5.14.0-web/css/all.css">
-
     <style>
-        /* hader area */
-        header,
-        main {
-            width: 100%;
-        }
-
         a {
             text-decoration: none;
             color: black;
+        }
+
+        header,
+        main {
+            width: 100%;
+
         }
 
         .container {
@@ -50,41 +49,26 @@
             margin: 5px;
         }
 
-        /* main area */
-
         .buy-link {
             height: 50%;
             padding: 20px;
-            background-color: #777;
-            color: #fff;
+            background-color: #ccc;
+            color: white;
             align-self: center;
         }
 
+        /* h2 {
+            text-align: left;
+    } */
         .img-300 {
             width: 300px;
             height: 300px;
         }
 
-        .img-57 {
-            width: 500px;
-            height: 700px;
-        }
-
-        .img-667 {
-            width: 700px;
-            height: 468px;
-        }
-
-        .img-37 {
-            width: 312px;
-            height: 468px;
-            overflow: hidden;
-        }
-
         .img-300 img,
         .img-57 img,
-        .img-667 img,
-        .img-37 img {
+        .img7 img,
+        .img3 img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -93,57 +77,63 @@
         .sub-title {
             margin: 100px auto;
             width: 300px;
-            font-weight: bold;
         }
 
-        .order-1 {
-            order: 1;
+        .img-57 {
+            width: 500px;
+            height: 700px;
         }
 
-        .order-2 {
+        .order1 {
             order: 2;
         }
 
+        .order2 {
+            order: 1;
+        }
+
         .demo {
-            margin: 80px 0;
+            margin: 80px auto;
+        }
+
+        .img7 {
+            width: 700px;
+            height: 500px;
+            /* overflow: hidden; */
+        }
+
+        .img3 {
+            width: 300px;
+            height: 500px;
+            overflow: hidden;
         }
 
         .link-row a {
             margin: 60px auto;
-            text-decoration: underline;
             font-size: 2rem;
+            text-decoration: underline;
             color: #ccc;
         }
 
-        /* footer area */
-        footer {
+        /* footer {
             width: 960px;
+        } */
+        .icon {
+            display: flex;
+            justify-content: center;
         }
 
         .f-signup {
             text-align: center;
         }
 
-        .justify-content-center {
-            justify-content: center;
-        }
-
         .fixed-button {
+            color: #fff;
+            background-color: black;
+            width: 250px;
             position: fixed;
             right: 10px;
             bottom: 10px;
-            width: 250px;
-            height: 60px;
-            background-color: #000;
-            color: #fff;
-        }
-
-        .fixed-button p {
-            margin: 0;
-        }
-
-        .link-row a {
-            margin: 60px auto;
         }
     </style>
 </head>
@@ -158,53 +148,44 @@
                     <a href="#">About</a>
                     <a href="#">Contact</a>
                 </div>
-
-                <div class="logo">Alameda</div>
-
+                <div class="logo">Alamenda</div>
                 <div class="nav-right">
                     <div class="social-icons"><i class="fab fa-instagram"></i></div>
                     <div class="social-icons"><i class="fab fa-twitter"></i></div>
                     <div class="social-icons"><i class="fas fa-shopping-cart"></i></div>
+
                 </div>
             </div>
         </div>
     </header>
-
-
     <main>
         <div class="container">
-
-
             <div class="row">
                 <h2>New In</h2>
-                <a href="#" class="buy-link">Shop Now</a>
+                <a class="buy-link">Shop Now</a>
             </div>
-
             <div class="row">
-                <div class="items img-300">
+                <div class="img-300">
                     <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560537853555-ON3AMRTYQBYIVY3GKNCX/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/ulihu-blue-linen-crop-top_0320-v1-FINAL-3.jpg"
                         alt="">
                     <span>Linen Top / Blue</span>
                 </div>
-                <div class="items img-300">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560537853555-ON3AMRTYQBYIVY3GKNCX/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/ulihu-blue-linen-crop-top_0320-v1-FINAL-3.jpg"
-                        alt="">
+                <div class="img-300">
+                    <img
+                        src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1561572533751-CCJKKV333MRZAQJB58QL/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/kimem-romy-trousers_0155-v1-FINAL-copy.jpg">
                     <span>Linen Top / Blue</span>
                 </div>
-                <div class="items img-300">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560537853555-ON3AMRTYQBYIVY3GKNCX/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/ulihu-blue-linen-crop-top_0320-v1-FINAL-3.jpg"
+                <div class="img-300">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560522400844-ZQQZO9KG459RJ59E15IR/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/lauren-winter-sonia-dress-terracotta_0228-v1-FINAL-copy.jpg"
                         alt="">
                     <span>Linen Top / Blue</span>
                 </div>
             </div>
-
-
             <div class="row sub-title">
-                <span class="">Made with love in Los Angeles from all natural eco-friendly materials.</span>
+                <p>Made with love in Los Angeles from all natural eco-friendly materials.</p>
             </div>
-
             <div class="row demo">
-                <div class="demo-product-info">
+                <div class="product">
                     <div class="img-300">
                         <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560526076469-A2USP4G5G8FHMHCUX4S2/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/kimem-lisa-oversized-shirt-navy_0363-v1-FINAL-copy.jpg"
                             alt="">
@@ -212,36 +193,30 @@
                     <p>Lisa Shirt</p>
                     <p>$50.00</p>
                 </div>
-
-                <div class="demo-product-model img-57">
+                <div class="img-57">
                     <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1587757476336-N31G7MJXSMQ4QZSEJ6CO/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-Jww_XBra4mrrAHD6FMA3bNKOBm5vyMDUBjVQdcIrt03OQ/lauren-winter-20150715-IMG_0352-v1-FINAL.jpg"
                         alt="">
                 </div>
             </div>
-
             <div class="row">
-                <div class="demo-product-info order-2">
-                    <div class="img-300 ">
+                <div class="product order1">
+                    <div class="img-300">
                         <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1560521860619-H5MD1F96ZD8E1O3GMRR6/ke17ZwdGBToddI8pDm48kNgFyjlEyNHlSWEjE-QCU1p7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UdLKTLgsLX9_T7LnpaostY9WYLb0IFNaX6bgMhY2dUNBWIB-7cQgYKo_bDpR6cEVkg/lauren-winter-sonia-skirt-grey_0270-v1-FINAL-copy.jpg"
                             alt="">
                     </div>
                     <p>Lisa Shirt</p>
                     <p>$50.00</p>
                 </div>
-
-                <div class="demo-product-model img-57 order-1">
+                <div class="img-57 order2">
                     <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1587757679533-6TI5Z3URI2W2C6F1LCAN/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-Jww_XBra4mrrAHD6FMA3bNKOBm5vyMDUBjVQdcIrt03OQ/lauren-winter-20150715-IMG_9299-v1-FINAL.jpg"
                         alt="">
                 </div>
             </div>
-
-            <div class="row">
-                <div class="img-667">
-                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1587758139960-E6HIVHJV9ITG7B3AEHCY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/lauren-winter-20150715-IMG_7450-v1-FINAL.jpg"
-                        alt="">
+            <div class="row demo">
+                <div class="img7">
+                    <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1587758139960-E6HIVHJV9ITG7B3AEHCY/ke17ZwdGBToddI8pDm48kLkXF2pIyv_F2eUT9F60jBl7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0iyqMbMesKd95J-X4EagrgU9L3Sa3U8cogeb0tjXbfawd0urKshkc5MgdBeJmALQKw/lauren-winter-20150715-IMG_7450-v1-FINAL.jpg"" alt="">
                 </div>
-
-                <div class="img-37">
+                <div class=" img3">
                     <img src="https://images.squarespace-cdn.com/content/v1/5d02d798cc25920001b61816/1587758261288-OTRMED62HCYJ198J61UU/ke17ZwdGBToddI8pDm48kMXRibDYMhUiookWqwUxEZ97gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0luUmcNM2NMBIHLdYyXL-Jww_XBra4mrrAHD6FMA3bNKOBm5vyMDUBjVQdcIrt03OQ/lauren-winter-20150715-IMG_0636-v1-FINAL.jpg"
                         alt="">
                 </div>
@@ -251,30 +226,26 @@
             </div>
         </div>
     </main>
-
     <footer>
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="icon">
                 <div class="social-icons"><i class="fab fa-instagram"></i></div>
                 <div class="social-icons"><i class="fab fa-twitter"></i></div>
             </div>
             <div class="f-signup">
                 <p>Sign up to receive news and updates.</p>
-                <div class="signup-input-area">
-                    <input type="text" placeholder="Email Address">
-                    <button>Sign up</button>
+                <div class="input-area">
+                    <input type="text" placeholder="email address">
+                    <button>sign up</button>
                 </div>
                 <p>Made with Squarespace</p>
             </div>
         </div>
     </footer>
-
-
     <button class="fixed-button">
         <p>Create a Site Like This</p>
-        <p>Free trial. Instant access.</p>
+        <p>Free trial. Instant access</p>
     </button>
-
 </body>
 
 </html>

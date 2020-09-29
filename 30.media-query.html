@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media-query</title>
+    <style>
+        main {
+            width: 80%;
+            background-color: rgb(63, 0, 0);
+            display: flex;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: darkslategray;
+            margin: 10px auto;
+        }
+
+        /* 桌機優先版本RWD切版 */
+        /* @media(max-width: 1200px) {
+            .box {
+                background-color: rgb(0, 99, 99);
+            }
+        }
+
+        @media(max-width: 992px) {
+            .box {
+                background-color: rgb(0, 134, 134);
+            }
+        }
+
+        @media(max-width: 768px) {
+            .box {
+                background-color: rgb(0, 189, 189);
+            }
+        }
+
+        @media(max-width: 480px) {
+            .box {
+                background-color: rgb(0, 223, 223);
+            }
+        } */
+
+        /* 手機優先RWD切版 */
+        /* @media(min-width: 576px) {
+            main {
+                background-color: rgb(80, 57, 0);
+            }
+        }
+
+        @media(min-width: 768px) {
+            main {
+                background-color: rgb(121, 86, 0);
+            }
+        }
+
+        @media(min-width: 992px) {
+            main {
+                background-color: rgb(179, 128, 0);
+            }
+        }
+
+        @media(min-width: 1200px) {
+            main {
+                background-color: rgb(235, 168, 0);
+            }
+        } */
+
+        /* 比較詳細但是麻煩的寫法 */
+        @media(max-width: 479px) {
+            .box {
+                background-color: rgb(39, 33, 75);
+            }
+        }
+
+        @media(min-width: 480px) and (max-width: 767px) {
+            .box {
+                background-color: rgb(65, 56, 128);
+            }
+        }
+
+        @media(min-width: 768px) and (max-width: 991px) {
+            .box {
+                background-color: rgb(98, 84, 192);
+            }
+        }
+
+        @media(min-width: 992px) and (max-width: 1199px) {
+            .box {
+                background-color: rgb(116, 99, 223);
+            }
+        }
+
+        @media(min-width: 1200px) {
+            .box {
+                background-color: rgb(132, 113, 255);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="box">box1</div>
+        <div class="box">box2</div>
+        <div class="box">box3</div>
+    </main>
+</body>
+
+</html>
